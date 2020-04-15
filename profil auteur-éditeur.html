@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>BiblioProfilAuteurEditeur</title>
+        <meta charset="utf-8">   
+        <link rel= "stylesheet" type="text/css" href = "Biblio.css"/>
+   </head>
+
+   <!--body-->
+   <body>
+         <div class="fixed-header">
+             <h1>B.Biblio</h1>
+               
+               <div class="container">
+                  <nav>
+                     <a href="Biblio-Index.html">Accueil</a>
+                     <a href="Biblio-historique.html">Historique</a>
+                     <input type="login" name="log" placeholder="login">
+                     <input type="password" name="pass" placeholder="mot de passe">
+                     <input type="submit" value="connexion">
+                  </nav>
+               </div>
+         </div>
+
+        <div class="native_scroll_container">  
+            <div class="centre">
+               <span><h2>Profil Auteur/Editeur</h2></span>
+            </div>
+            <div class="selection">
+               <h1>Bienvenu sur votre espace personnel</h1>
+            </div>
+
+            <form method="post">
+                  <table class="form-style">
+                     <h3>Vos coordonnées: </h3>
+                        <tr>
+                           <td>
+                              <label for="motPasse">Nouveau mot de passe<span class="required">*</span></label>
+                           </td>
+                           <td>
+                              <input type="password" name="passwordAuteur" id="passwordAuteur" maxlength="20" required>
+                              <span id="missPasswordAuteur"></span>
+                           </td>   
+                        </tr> 
+          
+                        <tr>
+                           <td>
+                              <label for="NomAuteur">Nom auteur/éditeur<span class="required">*</span></label>
+                           </td>
+                           <td>
+                              <input type="text" name="NomAuteur" id="NomAuteur" maxlength="20" required>
+                              <span id="missNomAuteur"></span>
+                           </td>   
+                        </tr> 
+          
+                        <tr>
+                           <td>
+                              <label for="AdresseAuteur">Adresse<span class="required">*</span></label>
+                           </td>
+                           <td>
+                              <input type="text" name="AdresseAuteur" id="AdresseAuteur" required>
+                              <span id="missAdresseAuteur"></span>
+                           </td>
+                        </tr>
+          
+                        <tr>
+                           <td>
+                              <label for="VilleAuteur">Ville<span class="required">*</span></label>
+                           </td>
+                           <td>
+                              <input type="text" name="VilleAuteur" id="VilleAuteur" maxlength="20" required>
+                              <span id="missVilleAuteur"></span>
+                           </td>
+                        </tr>
+          
+                        <tr>
+                           <td>
+                              <label for="CodePostalAuteur">CodePostal<span class="required">*</span></label>
+                           </td>
+                           <td>
+                              <input type="text" name="CodePostalAuteur" id="CodePostalAuteur" required>
+                              <span id="missPostalAuteur"></span>
+                           </td>
+                        </tr>
+          
+                        <tr>
+                           <td>
+                              <label for="MailAuteur">Mail<span class="required">*</span></label>
+                           </td>
+                           <td>
+                              <input type="email" name="MailAuteur" id="MailAuteur" required>
+                              <span id="missMailAuteur"></span>
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td>
+                              <label for="NomOeuvre">Nom de l'oeuvre<span class="required">*</span></label>
+                           </td>
+                           <td>
+                              <input type="text" name="NomOeuvre" id="NomOeuvre" maxlength="20" required>
+                              <span id="missNomOeuvre"></span>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <label for="NomCategorie">Merci de préciser la catégorie : <span class="required">*</span></label>
+                           </td>
+                           <td>
+                              <span id="missNomCategorie"></span>
+                           </td>
+                        </tr>
+         
+                        <tr>
+                           <td>
+                           <label><input type="checkbox" name="check" value="1" />Roman Français</label><br/>
+                           <label><input type="checkbox" name="check" value="2" />Roman Etranger</label><br/>
+                           <label><input type="checkbox" name="check" value="3" />Documentaire</label><br/>
+                           <label><input type="checkbox" name="check" value="4" />Biographie</label><br/>
+                           <button id = "butt" value="1" type="submit" onclick="ValidationBox();">Valider</button>
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <tr>
+                              <td>
+                                 <label for="Pdf">Déposer votre fichier pdf ici: <span class="required">*</span></label>
+                                 <input type="url" id="fichierPdf" name="fichierPdf" value="Pdf">
+                              </td>
+                              <td>
+                                 <span id="missPdf"></span>
+                              </td>
+                           </tr>
+                              <td>
+                                 <input type="submit" value="Envoyer" id="boutonEnvoi3">
+                                 <input type="reset" value="Annuler"> 
+                              </td>
+                           </tr>
+                  </table>  
+            </form>
+
+            
+   <!--body-->  
+    
+   <!--footer-->
+      <div class="fixed-footer">
+          <div class="container">Copyright &copy; 2020 BBiblio</div> 
+            <div class="container1">
+               <a href="NewLetter.html">News-Letter</a>
+               <a href="Règlement.html">Extrait-du-règlement</a>
+               <a href="https://www.instagram.com/?hl=fr">Instagram</a>
+               <a href="https://twitter.com/login?lang=fr">Twitter</a>
+               <a href="https://fr-fr.facebook.com/">Facebook</a>  
+            </div>        
+         </div>
+   <!--footer-->    
+          
+           
+      <script src ="Biblio-auteur.js"></script>
+   </body>
+</html>

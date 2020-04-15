@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BiblioFormulaire</title>
+        <meta charset="utf-8">   
+        <link rel= "stylesheet" type="text/css" href = "Biblio.css"/>
+
+    </head>
+
+    <!--body-->
+    <body>
+    
+            <div class="fixed-header">
+                <h1>B.Biblio</h1>
+               
+                <div class="container">
+                    <nav>
+                        <a href="Biblio-Index.html">Accueil</a>
+                        <a href="Biblio-historique.html">Historique</a>
+                        <input type="login" name="log" placeholder="login">
+                        <input type="password" name="pass" placeholder="mot de passe">
+                        <input type="submit" value="connexion">
+                    </nav>
+                </div>
+            </div>
+
+        <div class="native_scroll_container">  
+            <div class="centre">
+               <span><h2>Formulaire d'inscription pour devenir membre du jury ou candidater en tant qu'auteur/éditeur</h2></span>
+            </div>
+            <div class="selection">
+               <h1>Formulaire de contact</h1>
+            </div>
+   <form method="post">
+      <table class="form-style">
+         <h3>Veuillez remplir les champs suivants : </h3>
+            <tr>
+               <td>
+                  <label for="Nom">Nom<span class="required">*</span></label>
+               </td>
+               <td>
+                  <input type="text" name="Nom" id="Nom" maxlength="20" required>
+                  <span id="missNom"></span>
+               </td>   
+            </tr> 
+
+            <tr>
+               <td>
+                  <label for="Prenom">Prénom</label>
+               </td>
+               <td>
+                  <input type="text" name="Prenom" id="Prenom" maxlength="20">
+               </td>
+            </tr>
+
+            <tr>
+               <td>
+                  <label for="Date">Date de naissance</label>
+               </td>
+               <td>
+                  <input type="date" name="Date" id="Date">
+               </td>
+            </tr>
+
+            <tr>
+               <td>
+                  <label for="Adresse">Adresse<span class="required">*</span></label>
+               </td>
+               <td>
+                  <input type="text" name="Adresse" id="Adresse" required>
+                  <span id="missAdresse"></span>
+               </td>
+            </tr>
+
+            <tr>
+               <td>
+                  <label for="Ville">Ville<span class="required">*</span></label>
+               </td>
+               <td>
+                  <input type="text" name="Ville" id="Ville" maxlength="20" required>
+                  <span id="missVille"></span>
+               </td>
+            </tr>
+
+            <tr>
+               <td>
+                  <label for="CodePostal">CodePostal<span class="required">*</span></label>
+               </td>
+               <td>
+                  <input type="text" name="CodePostal" id="CodePostal" required>
+                  <span id="missPostal"></span>
+               </td>
+            </tr>
+
+            <tr>
+               <td>
+                  <label for="Mail">Mail<span class="required">*</span></label>
+               </td>
+               <td>
+                  <input type="email" name="Mail" id="Mail" required>
+                  <span id="missMail"></span>
+               </td>
+            </tr>
+
+            <tr>
+               <td>
+                  <label for="Message">Messages</label>
+               </tr>
+               <td>
+                  <textarea name="message" class="long field-textarea" maxlength="400"></textarea>
+               </td>
+            </tr>
+
+            <tr>
+               <td>
+                  <label for="jury">Je candidate pour être jury</label>
+               </td>
+               <td>
+                  <input type="radio" id="choix1" name="choix" value="Choix1"> 
+               </td>   
+            </tr>
+
+           
+            <tr>
+               <td>
+                  <label for="auteur">Je candidate en tant qu'auteur/éditeur</label>
+               </td>
+               <td>
+                  <input type="radio" id="choix2" name="choix" value="Choix2"> 
+            </tr>
+
+            
+   
+            <tr>
+               <td>   
+                  <input type="submit" value="Envoyer" id="boutonEnvoi">
+                  <input type="reset" value="Annuler"> 
+               </td>
+            </tr>
+      </table>  
+   </form>
+      
+
+    <!--body-->  
+    
+    <!--footer-->
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2020 BBiblio</div> 
+        <div class="container1">
+            <a href="NewLetter.html">News-Letter</a>
+            <a href="Règlement.html">Extrait-du-règlement</a>
+            <a href="https://www.instagram.com/?hl=fr">Instagram</a>
+            <a href="https://twitter.com/login?lang=fr">Twitter</a>
+            <a href="https://fr-fr.facebook.com/">Facebook</a>  
+        </div>        
+    </div>
+<!--footer-->    
+  
+   
+
+        <script src ="Biblio.js"></script>
+    </body>
+</html>

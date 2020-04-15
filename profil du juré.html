@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BiblioProfilJuré</title>
+        <meta charset="utf-8">   
+        <link rel= "stylesheet" type="text/css" href = "Biblio.css"/>
+
+    </head>
+
+    <!--body-->
+    <body>
+    
+            <div class="fixed-header">
+                <h1>B.Biblio</h1>
+               
+                <div class="container">
+                    <nav>
+                        <a href="Biblio-Index.html">Accueil</a>
+                        <a href="Biblio-historique.html">Historique</a>
+                        <a href="Notation juré par catégorie.html">Mes notations</a>
+                        <a href="Notation juré par catégorie.html">Mes oeuvres à noter</a>
+                        <input type="login" name="log" placeholder="login">
+                        <input type="password" name="pass" placeholder="mot de passe">
+                        <input type="submit" value="connexion">
+                    </nav>
+                </div>
+            </div>
+
+        <div class="native_scroll_container">  
+            <div class="centre">
+               <span><h2>Profil Juré</h2></span>
+            </div>
+            <div class="selection">
+               <h1>Bienvenu sur votre espace personnel</h1>
+            </div>
+   <form method="post">
+      <table class="form-style">
+         <h3>Vos coordonnées: </h3>
+         <tr>
+            <td>
+                <label for="motPasse">Nouveau mot de passe<span class="required">*</span></label>
+            </td>
+            <td>
+               <input type="password" name="password" id="password" maxlength="20" required>
+                  <span id="missPassword"></span>
+               </td>   
+            </tr> 
+
+            <tr>
+            <td>
+                <label for="NomJure">Nom<span class="required">*</span></label>
+            </td>
+            <td>
+               <input type="text" name="NomJure" id="NomJure" maxlength="20" required>
+                  <span id="missNomJure"></span>
+               </td>   
+            </tr> 
+
+            <tr>
+               <td>
+                  <label for="PrenomJure">Prénom</label>
+               </td>
+               <td>
+                  <input type="text" name="PrenomJure" id="PrenomJure" maxlength="20">
+               </td>
+            </tr>
+
+            <tr>
+               <td>
+                  <label for="DateJure">Date de naissance</label>
+               </td>
+               <td>
+                  <input type="date" name="DateJure" id="DateJure">
+               </td>
+            </tr>
+
+            <tr>
+               <td>
+                  <label for="AdresseJure">Adresse<span class="required">*</span></label>
+               </td>
+               <td>
+                  <input type="text" name="AdresseJure" id="AdresseJure" required>
+                  <span id="missAdresseJure"></span>
+               </td>
+            </tr>
+
+            <tr>
+               <td>
+                  <label for="VilleJure">Ville<span class="required">*</span></label>
+               </td>
+               <td>
+                  <input type="text" name="VilleJure" id="VilleJure" maxlength="20" required>
+                  <span id="missVilleJure"></span>
+               </td>
+            </tr>
+
+            <tr>
+               <td>
+                  <label for="CodePostalJure">CodePostal<span class="required">*</span></label>
+               </td>
+               <td>
+                  <input type="text" name="CodePostalJure" id="CodePostalJure" required>
+                  <span id="missPostalJure"></span>
+               </td>
+            </tr>
+
+            <tr>
+               <td>
+                  <label for="MailJure">Mail<span class="required">*</span></label>
+               </td>
+               <td>
+                  <input type="email" name="MailJure" id="MailJure" required>
+                  <span id="missMailJure"></span>
+               </td>
+            </tr>
+
+            <tr>
+               <td>
+                  
+                  <label for="Catégorie1">Meilleur Roman Français</label> 
+                     <input type="checkbox" id="cat1" name="cat1" value="check">
+                  <label for="Catégorie2">Meilleur Roman Etranger</label> 
+                     <input type="checkbox" id="cat2" name="cat2" value="check">
+                  <label for="Catégorie3">Meilleur Documentaire</label> 
+                     <input type="checkbox" id="cat3" name="cat3" value="check">
+                  <label for="Catégorie4">Meilleure Biographie</label> 
+                     <input type="checkbox" id="cat4" name="cat4" value="check">
+                    
+               </td>
+            </tr> 
+            <tr>
+               <td>
+                  <input type="submit" value="Envoyer" id="boutonEnvoi2">
+                  <input type="reset" value="Annuler"> 
+               </td>
+            </tr>
+      </table>  
+   </form>
+      
+
+    <!--body-->  
+    
+    <!--footer-->
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2020 BBiblio</div> 
+        <div class="container1">
+            <a href="NewLetter.html">News-Letter</a>
+            <a href="Règlement.html">Extrait-du-règlement</a>
+            <a href="https://www.instagram.com/?hl=fr">Instagram</a>
+            <a href="https://twitter.com/login?lang=fr">Twitter</a>
+            <a href="https://fr-fr.facebook.com/">Facebook</a>  
+        </div>        
+    </div>
+<!--footer-->    
+  
+   
+
+        <script src ="Biblio-juré.js"></script>
+    </body>
+</html>

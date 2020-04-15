@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BiblioIndex</title>
+        <meta charset="utf-8">   
+        <link rel= "stylesheet" type="text/css" href = "Biblio.css"/>
+
+    </head>
+
+    <!--body-->
+    <body>
+    
+            <div class="fixed-header">
+               
+                    <h1>B.Biblio</h1> 
+    
+                <div class="container">
+                    <nav>
+                        <a href="#">Accueil</a>
+                        <a href="Biblio-historique.html">Historique</a>
+                        <a href="#">Juré</a>   <!--Connexion possible que par identifiant valide reçus par mail-->
+                        <a href="#">Auteur/Editeur</a>    <!--Connexion possible que par identifiant valide reçus par mail-->
+                        <a href="Formulaire d'inscription.html">Devenez Jury</a>
+                      
+                        <Form method="POST" name = "login" id = "login"> <!--Connexion à établir avec la base de donnée-->
+                            <input type="login" name="username" placeholder="login">
+                            <input type="password" name="password" placeholder="mot de passe">
+                            <input type="button" value="connexion" onclick="Login()">
+                        </Form>
+                    </nav>
+                </div>
+            </div>
+
+        <div class="native_scroll_container">  
+            <div class="centre">
+                <span><h2>Grand concours de parution d'ouvrage</h2></span>
+            </div> 
+            <div class="selection">  
+            <h2>Notre sélection pour le concours</h2>
+            </div>
+            <div class="content">
+                <p align="center"><img src="livre.jpg" width="60px" height="60px"></p>
+                <h2>Nom de l'oeuvre 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                </p>
+
+                <p align="center"><img src="book.jpg" width="60px" height="60px"></p>
+                <h2>Nom de l'oeuvre 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                </p>
+
+                <p align="center"><img src="livre.jpg" width="60px" height="60px"></p>
+                <h2>Nom de l'oeuvre 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                </p>
+
+                <p align="center"><img src="book.jpg" width="60px" height="60px"></p>
+                <h2>Nom de l'oeuvre 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                </p>
+
+                <p align="center"><img src="livre.jpg" width="60px" height="60px"></p>
+                <h2>Nom de l'oeuvre 5</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                </p>
+
+                <p align="center"><img src="book.jpg" width="60px" height="60px"></p>
+                <h2>Nom de l'oeuvre 6</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                </p>
+
+                <p align="center"><img src="livre.jpg" width="60px" height="60px"></p>
+                <h2>Nom de l'oeuvre 7</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                </p>
+
+                <p align="center"><img src="book.jpg" width="60px" height="60px"></p>
+                <h2>Nom de l'oeuvre 8</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui.
+                </p>
+            </div>
+        </div>
+    <!--body-->  
+    
+    <!--footer-->
+            <div class="fixed-footer">
+                <div class="container">Copyright &copy; 2020 BBiblio</div> 
+                <div class="container1">
+                    <a href="NewLetter.html">News-Letter</a>
+                    <a href="Règlement.html">Extrait-du-règlement</a>
+                    <a href="https://www.instagram.com/?hl=fr">Instagram</a>
+                    <a href="https://twitter.com/login?lang=fr">Twitter</a>
+                    <a href="https://fr-fr.facebook.com/">Facebook</a>  
+                </div>        
+            </div>
+    <!--footer-->    
+          
+           
+
+        <script src ="connexion.js"></script>
+    </body>
+</html>

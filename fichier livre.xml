@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
+
+
+
+<livre>
+    <titre>Le titre</livre>
+        <auteur>Auteur du livre</auteur>
+        <type>Type de livre</type>
+        <date>Date de parution</date>
+    <description>description du livre</description>
+        <resume>résumé du livre</resume>
+        <note>Note attribué</note>
+</livre>
